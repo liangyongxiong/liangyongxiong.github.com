@@ -3,7 +3,7 @@
 >
 
     <head>
-        <title>Archives - X - Blog</title>
+        <title>文章列表 - X - Blog</title>
 
         <!-- Using the latest rendering mode for IE -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,7 +45,7 @@
 
     </head>
 
-    <body>
+    <body style="font-family:Microsoft YaHei;">
         <div class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -62,8 +62,8 @@
 
 
                             <li >
-                                <a href="/categories/tech.html" target="_blank">
-                                    <span>Tech</span>
+                                <a href="/categories/ji-zhu.html" target="_blank">
+                                    <span>技术</span>
                                 </a>
                             </li>
                     </ul>
@@ -71,7 +71,7 @@
                         <li>    
                             <a href="/archives.html">
                                 <i class="fa fa-th-list"></i>
-                                <span class="icon-label">Archives</span>
+                                <span class="">文章列表</span>
                             </a>
                         </li>
                     </ul>
@@ -86,105 +86,157 @@
                 <div class="col-sm-9">
 
     <section id="content">
-        <h1>Archives for X - Blog</h1>
+        <h1>文章列表</h1>
         <div id="archives">
                 <p>
-                    <span class="categories-timestamp"><time datetime="2013-11-06T10:06:00+08:00">Wed 06 November 2013</time></span>
-                    <a href="/posts/python-je-l-aime-a-mourir.html">I love Python more than music</a>
+                    <span class="categories-timestamp">
+                        <time datetime="2013-11-06T10:06:00+08:00">Wed 06 November 2013</time>
+                    </span>
+                    <a href="/posts/i-love-python-more-than-music.html" target="_blank">
+                        <span>I love Python more than music</span>
+                    </a>
                 </p>
         </div>
     </section>
                 </div>
 
 
-                <div class="col-sm-3 well well-sm" style="margin-top:20px;" id="sidebar">
+                <div class="col-sm-3">
+                    <br>
+                    <div id="sidebar" class="well well-sm">
 
 
 <aside>
     <section>
         <ul class="list-group list-group-flush">
-                <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
-                    <ul class="list-group" id="social">
-                            <li class="list-group-item"><a href="#"><i class="fa fa-you-can-add-links-in-your-config-file-square fa-lg"></i> You can add links in your config file</a></li>
-                            <li class="list-group-item"><a href="#"><i class="fa fa-another-social-link-square fa-lg"></i> Another social link</a></li>
-                    </ul>
-                </li>
 
 
+            <li class="list-group-item">
+                <a href="/">
+                    <h4><b>文章分类</b></h4>
+                </a>
+                <ul class="list-group" id="categories">
+                    <li class="list-group-item">
+                        <a href="/categories/ji-zhu.html">
+                            <div class="row">
+                                <div class="pull-left" style="width:24px;">
+                                    <i class="fa fa-bookmark text-muted"></i>
+                                </div>
+                                <div class="pull-left">
+                                    <span class="text-muted">技术</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
 
                 <li class="list-group-item">
                     <a href="/">
-                        <h4>
-                            <i class="fa fa-tags fa-lg"></i>
-                            <span class="icon-label">Tags</span>
-                        </h4>
+                        <h4><b>全部标签</b></h4>
                     </a>
                     <ul class="list-group " id="tags">
                         <li class="list-group-item tag-4">
                             <a href="/tags/python.html">
-                                <span>python</span>
+                                <div class="row">
+                                    <div class="pull-left" style="width:24px;">
+                                        <i class="fa fa-tag text-muted"></i>
+                                    </div>
+                                    <div class="pull-left">
+                                        <span class="text-muted">Python</span>
+                                    </div>
+                                </div>
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="/tags/personal.html">
-                                <span>personal</span>
+                            <a href="/tags/ge-ren.html">
+                                <div class="row">
+                                    <div class="pull-left" style="width:24px;">
+                                        <i class="fa fa-tag text-muted"></i>
+                                    </div>
+                                    <div class="pull-left">
+                                        <span class="text-muted">个人</span>
+                                    </div>
+                                </div>
                             </a>
                         </li>
                     </ul>
                 </li>    
 
+            <li class="list-group-item">
+                <h4><b>联系方式</b></h4>
+                <ul class="list-group" id="social">
+                    <li class="list-group-item">
+                        <a href="#">
+                            <div class="row">
+                                <div class="pull-left" style="width:24px;">
+                                    <i class="fa fa-qq text-muted"></i>
+                                </div>
+                                <div class="pull-left">
+                                    <span class="text-muted">ＱＱ</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">
+                            <div class="row">
+                                <div class="pull-left" style="width:24px;">
+                                    <i class="fa fa-weixin text-muted"></i>
+                                </div>
+                                <div class="pull-left">
+                                    <span class="text-muted">微信</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">
+                            <div class="row">
+                                <div class="pull-left" style="width:24px;">
+                                    <i class="fa fa-weibo text-muted"></i>
+                                </div>
+                                <div class="pull-left">
+                                    <span class="text-muted">微博</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
 
-    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
-      <ul class="list-group" id="links">
-        <li class="list-group-item">
-            <a href="http://getpelican.com/" target="_blank">
-                Pelican
-            </a>
-        </li>
-        <li class="list-group-item">
-            <a href="http://python.org/" target="_blank">
-                Python.org
-            </a>
-        </li>
-        <li class="list-group-item">
-            <a href="http://jinja.pocoo.org/" target="_blank">
-                Jinja2
-            </a>
-        </li>
-        <li class="list-group-item">
-            <a href="#" target="_blank">
-                You can modify those links in your config file
-            </a>
-        </li>
-      </ul>
-    </li>
 
         </ul>
     </section>
 
-</aside>                </div>
+</aside>                    </div>
+                </div>
             </div>
         </div>
 
 <footer>
     <div class="container">
-        <hr>
-        <div class="row">
-            <div class="col-xs-10">
-                <span>&copy; 2015</span>
-                <a href="mailto:331338391@qq.com" target="_blank">LYX</a>
-                <span style="margin:0px 10px;">|</span>
-                <span>Powered by</span>
-                <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
-                <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
-            </div>
-            <div class="col-xs-2">
-                <p class="pull-right">
-                    <a href="#">
-                        <i class="fa fa-arrow-up"></i>
-                        <span>返回顶部</span>
-                    </a>
-                </p>
+        <hr style="margin:0px;">
+        <div class="" style="padding-top:15px;">
+            <div class="row">
+                <div class="col-xs-10">
+                    <span class="text-muted">&copy; 2015</span>
+                    <a class="text-muted" style="margin:0px 10px;" href="mailto:331338391@qq.com">LYX</a>
+                    <span class="text-muted">All rights reserved</span>
+                    <span class="text-muted" style="margin:0px 10px;">|</span>
+                    <span class="text-muted">Powered by</span>
+                    <a class="text-muted" href="http://docs.getpelican.com/" target="_blank">Pelican</a>
+                    <span class="text-muted">,</span>
+                    <a class="text-muted" href="http://getbootstrap.com" target="_blank">Bootstrap</a>
+                </div>
+                <div class="col-xs-2">
+                    <p class="pull-right">
+                        <a href="#">
+                            <i class="fa fa-arrow-up text-muted"></i>
+                            <b class="text-muted">返回顶部</b>
+                        </a>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
