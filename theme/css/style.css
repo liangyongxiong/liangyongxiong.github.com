@@ -157,3 +157,9 @@ figure.floatcenter, .align-center {
 .tagcloud li {
     padding: 0px;
 }
+
+
+/* --------------------- customized css --------------------- */
+pre {
+    padding: 16px;
+}

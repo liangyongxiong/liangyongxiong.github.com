@@ -3,7 +3,7 @@
 >
 
     <head>
-        <title>个人 - Pelican Blog</title>
+        <title>使用 Pelican + Github Pages 搭建静态博客 - Pelican Blog</title>
 
         <!-- Using the latest rendering mode for IE -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,20 +14,15 @@
 
 
 
+<link rel="canonical" href="/posts/shi-yong-pelican-github-pages-da-jian-jing-tai-bo-ke.html">
 
-    <meta name="author" content="LYX" />
-    <meta name="keywords" content="个人" />
+        <meta name="author" content="Michael" />
+        <meta name="keywords" content="Python,Github" />
+        <meta name="description" content="Pelican 是一套开源的使用 Python 编写的博客静态生成, 可以添加文章和和创建页面, 可以使用 MarkDown reStructuredText 和 AsiiDoc 的格式来抒写, 同时使用 Disqus 评论系统, 支持 RSS 和 Atom 输出、插件、主题, 代码高亮等功能, 采用 Jajin2 模板引擎, 可以很容易的更改模板" />
 
         <!-- Enable latex plugin -->
 
 
-
-        <!-- Open Graph tags -->
-            <meta property="og:site_name" content="Pelican Blog" />
-            <meta property="og:type" content="website"/>
-            <meta property="og:title" content="Pelican Blog"/>
-            <meta property="og:url" content=""/>
-            <meta property="og:description" content="Pelican Blog"/>
 
 
         <!-- Bootstrap -->
@@ -62,7 +57,7 @@
                     <ul class="nav navbar-nav">
 
 
-                            <li >
+                            <li class="active">
                                 <a href="/categories/ji-zhu.html" target="_blank">
                                     <span>技术</span>
                                 </a>
@@ -86,58 +81,93 @@
                 
                 <div class="col-sm-9">
 
-            <article>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="pull-left" style="width:200px;height:135px;margin-right:20px;">
-                            <img class="" style="width:200px;height:135px;box-shadow:1px 1px 1px #ccc;" src="" />
-                        </div>
-                        <div class="" style="overflow:hidden;">
-                            <div class="">
-                                <a href="/posts/i-love-python-more-than-music.html" target="_blank">
-                                    <b style="line-height:30px;font-size:20px;">I love Python more than music</b>
-                                </a>
-                            </div>
-                            <div class="" style="margin:5px 0px;font-size:12px;">
-                                <a href="/authors/francis-cabrel.html" target="_blank">
-                                    <i class="fa fa-user text-muted"></i>
-                                    <span class="text-muted">Francis Cabrel</span>
-                                </a>
-                                <span style="margin-left:10px;">
-                                    <i class="fa fa-clock-o text-muted"></i>
-                                    <time class="text-muted" datetime="2013-11-06T10:06:00+08:00">2013-11-06</time>
-                                </span>
-                            </div>
-                            <div class="summary">
-                                <p>
-                                    <span style="color:#666;">Hello,World.</span>
-                                </p>
-                            </div>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="pull-left" style="font-size:12px;">
+    <section id="content">
+        <article>
+            <header>
+                <h1>使用 Pelican + Github Pages 搭建静态博客</h1>
+            </header>
+            <div class="" style="margin:15px 0px;">
+<div class="container-fluid post-info">
+    <div class="row">
+        <div class="pull-left">
+            <a href="/categories/ji-zhu.html" target="_blank">
+                <i class="fa fa-bookmark text-muted"></i>
+                <span class="text-muted">技术</span>
+            </a>
+        </div>
+
+        <div class="pull-left" style="margin-left:20px;">
     <i class="fa fa-tags text-muted"></i>
-        <a href="/tags/ge-ren.html">
-            <span style="color:#006cd8;">个人</span>
-        </a>
-        <span class="text-muted">/</span>
         <a href="/tags/python.html">
             <span style="color:#006cd8;">Python</span>
         </a>
-                                    </div>
-                                    <div class="pull-right">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <span class="text-muted">/</span>
+        <a href="/tags/github.html">
+            <span style="color:#006cd8;">Github</span>
+        </a>
+        </div>
+
+        <div class="pull-right">
+            <a href="/authors/michael.html" target="_blank">
+                <i class="fa fa-user text-muted"></i>
+                <span class="text-muted">Michael</span>
+            </a>
+
+            <span class="published" style="margin-left:15px;">
+                <i class="fa fa-clock-o text-muted"></i>
+                <time class="text-muted" datetime="2013-11-06T10:30:00+08:00">2013-11-06</time>
+            </span>
+        </div>
+    </div>
+</div><!-- /.post-info -->            </div>
+            <div class="entry-content">
+                <div class="" style="padding:15px;background-color:#f5f6f7;">
+                    <span class="text-muted">Pelican 是一套开源的使用 Python 编写的博客静态生成, 可以添加文章和和创建页面, 可以使用 MarkDown reStructuredText 和 AsiiDoc 的格式来抒写, 同时使用 Disqus 评论系统, 支持 RSS 和 Atom 输出、插件、主题, 代码高亮等功能, 采用 Jajin2 模板引擎, 可以很容易的更改模板</span>
                 </div>
-            </article>
-            <hr/>
+                <div class="" style="margin-top:30px;font-size:16px;">
+                    <h3>初始化 Pelican 项目</h3>
 
+<p>在 Python + Pip + Ubuntu 环境下，直接通过<code>pip install</code>命令，即可安装 Pelican</p>
+
+<div class="highlight">
+<pre>
+sudo pip install pelican
+</pre>
+</div>
+
+<p>创建博客文件夹和 Pelican 项目</p>
+
+<div class="highlight">
+<pre>
+mkdir /path/to/your/blog
+cd /path/to/your/blog
+pelican-quickstart
+</pre>
+</div>
+
+<p><br>
+<h3>提交到 Github</h3>
+<p>创建 Github 工程，工程名称必须为<code>username.github.com</code>，其中<code>username</code>是你在 Github 上注册的用户名，并将 Github 工程<code>clone</code>到 Pelican 项目的<code>output</code>文件夹中。</p>
+<div class="highlight">
+<pre>
+cd /path/to/your/blog
+git clone https://github.com/username/username.github.com.git output
+</pre>
+</div>
+<div class="highlight">
+<pre>
+cd outout
+git add --all
+git commit -m 'first commit'
+git push
+</pre>
+</div></p>
+                </div>
+            </div> <!-- /.entry-content -->
+        </article>
+    </section>
 
                 </div>
-
 
                 <div class="col-sm-3">
                     <div id="sidebar" class="well well-sm">
@@ -174,13 +204,13 @@
                     </a>
                     <ul class="list-group " id="tags">
                         <li class="list-group-item tag-4">
-                            <a href="/tags/ge-ren.html">
+                            <a href="/tags/github.html">
                                 <div class="row">
                                     <div class="pull-left" style="width:24px;">
                                         <i class="fa fa-tags text-muted"></i>
                                     </div>
                                     <div class="pull-left">
-                                        <span class="text-muted">个人</span>
+                                        <span class="text-muted">Github</span>
                                     </div>
                                 </div>
                             </a>
