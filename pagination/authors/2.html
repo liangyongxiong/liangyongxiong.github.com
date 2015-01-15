@@ -43,10 +43,20 @@
 
 
 
+
+        <script src="/theme/js/jquery.min.js"></script>
+        <script src="/theme/js/holder.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="/theme/js/bootstrap.min.js"></script>
+
+        <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+        <script src="/theme/js/respond.min.js"></script>
+
     </head>
 
     <body style="font-family:Microsoft YaHei;">
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="base-navbar navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -81,10 +91,27 @@
             </div>
         </div> <!-- /.navbar -->
 
-    <h1>Authors on Pelican Blog</h1>
-        <li><a href="/authors/michael.html">Michael</a> (25)</li>
+        <div class="base-content">
+<div class="container">
+    <div class="page-header">
+        <h3>
+            <i class="fa fa-user text-muted"></i>
+            <b class="icon-label text-muted">全部作者</b>
+        </h3>
+    </div>
+    <section id="authors">
+        <div>
+            <a href="/authors/michael.html" target="_blank">
+                <span>Michael</span>
+                <span>(25)</span>
+            </a>
+        </div>
+    </section>
+</div>
+        </div>
 
-<footer style="background-color:#456;">
+        <div class="base-footer">
+<footer style="background-color:#333;">
     <hr style="margin:0px;">
     <div class="container">
         <div class="" style="padding:15px 0px;">
@@ -118,14 +145,15 @@
             </div>
         </div>
     </div>
-</footer>
-        <script src="/theme/js/jquery.min.js"></script>
+</footer>        </div>
 
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="/theme/js/bootstrap.min.js"></script>
 
-        <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-        <script src="/theme/js/respond.min.js"></script>
-
+        <script type="text/javascript">
+        $(window).resize(function() {
+            $('.base-content').css('min-height',
+                $(window).height()-$('.base-navbar').height()-$('.base-footer').height());
+        });
+        $(window).resize();
+        </script>
     </body>
 </html>

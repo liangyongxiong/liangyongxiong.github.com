@@ -43,10 +43,20 @@
 
 
 
+
+        <script src="/theme/js/jquery.min.js"></script>
+        <script src="/theme/js/holder.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="/theme/js/bootstrap.min.js"></script>
+
+        <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+        <script src="/theme/js/respond.min.js"></script>
+
     </head>
 
     <body style="font-family:Microsoft YaHei;">
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="base-navbar navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -81,6 +91,7 @@
             </div>
         </div> <!-- /.navbar -->
 
+        <div class="base-content">
 <h1>Archives for November 2013</h1>
 
 <dl>
@@ -135,8 +146,10 @@
     <dt>Wed 06 November 2013</dt>
     <dd><a href="/posts/20.html">使用 Pelican + Github 搭建静态博客</a></dd>
 </dl>
+        </div>
 
-<footer style="background-color:#456;">
+        <div class="base-footer">
+<footer style="background-color:#333;">
     <hr style="margin:0px;">
     <div class="container">
         <div class="" style="padding:15px 0px;">
@@ -170,14 +183,15 @@
             </div>
         </div>
     </div>
-</footer>
-        <script src="/theme/js/jquery.min.js"></script>
+</footer>        </div>
 
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="/theme/js/bootstrap.min.js"></script>
 
-        <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-        <script src="/theme/js/respond.min.js"></script>
-
+        <script type="text/javascript">
+        $(window).resize(function() {
+            $('.base-content').css('min-height',
+                $(window).height()-$('.base-navbar').height()-$('.base-footer').height());
+        });
+        $(window).resize();
+        </script>
     </body>
 </html>

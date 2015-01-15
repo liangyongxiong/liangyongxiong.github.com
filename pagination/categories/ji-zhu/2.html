@@ -44,10 +44,20 @@
 
 
 
+
+        <script src="/theme/js/jquery.min.js"></script>
+        <script src="/theme/js/holder.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="/theme/js/bootstrap.min.js"></script>
+
+        <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+        <script src="/theme/js/respond.min.js"></script>
+
     </head>
 
     <body style="font-family:Microsoft YaHei;">
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="base-navbar navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -82,7 +92,14 @@
             </div>
         </div> <!-- /.navbar -->
 
-<div class="container hidden-xs" style="padding-top:20px;">
+        <div class="base-content">
+<div class="container hidden-xs">
+<div class="page-header">
+    <h3>
+        <i class="fa fa-bookmark text-muted"></i>
+        <b class="icon-label text-muted">技术</b>
+    </h3>
+</div>
     <div class="row">
         <div class="col-md-9 col-sm-12">
             <article>
@@ -658,27 +675,127 @@
 
         </div>
         <div class="col-xs-3 hidden-sm hidden-xs">
+
+
+<aside>
+    <section>
+        <blockquote style="margin:0px;padding:10px;font-size:16px;background-color:#f7f8f9;">
+            <i class="fa fa-home text-muted"></i>
+            <a href="#">
+                <strong class="icon-label">联系方式</strong>
+            </a>
+        </blockquote>
+        <div class="container-fluid" style="margin-top:5px;">
+            <div class="row" style="line-height:40px;font-size:16px;">
+                <div class="col-xs-2" align="center">
+                    <a href="tel:18998901440" title="联系电话">
+                        <i class="fa fa-phone-square text-muted"></i>
+                    </a>
+                </div>
+                <div class="col-xs-2" align="center">
+                    <a href="mailto:331338391@qq.com" target="_blank" title="发送邮件">
+                        <i class="fa fa-envelope text-muted"></i>
+                    </a>
+                </div>
+                <div class="col-xs-2" align="center" title="发起QQ会话">
+                    <a href="http://wpa.qq.com/msgrd?v=3&uin=331338391&site=liangyongxiong.cn&menu=yes" target="_blank">
+                        <i class="fa fa-qq text-muted"></i>
+                    </a>
+                </div>
+                <div class="col-xs-2" align="center">
+                    <a class="popover-weixin lyx-a" href="javascript:void(0);" data-toggle="popover">
+                        <i class="fa fa-weixin text-muted"></i>
+                    </a>
+                </div>
+                <div class="col-xs-2" align="center" title="新浪微博">
+                    <a href="http://weibo.com/liangyongxiong1011" target="_blank">
+                        <i class="fa fa-weibo text-muted"></i>
+                    </a>
+                </div>
+            </div>
         </div>
+        <br>
+        <blockquote style="margin:0px;padding:10px;font-size:16px;background-color:#f7f8f9;">
+            <i class="fa fa-tags text-muted"></i>
+            <a href="/tags.html">
+                <strong class="icon-label">全部标签</strong>
+            </a>
+        </blockquote>
+        <ul class="nav nav-pills" style="margin-top:5px;">
+            <li>
+                <a href="/tags/python.html">
+                    <span class="text-muted">Python</span>
+                </a>
+            </li>
+            <li>
+                <a href="/tags/pelican.html">
+                    <span class="text-muted">Pelican</span>
+                </a>
+            </li>
+            <li>
+                <a href="/tags/github.html">
+                    <span class="text-muted">Github</span>
+                </a>
+            </li>
+        </ul>
+        <br>
+        <blockquote style="margin:0px;padding:10px;font-size:16px;background-color:#f7f8f9;">
+            <i class="fa fa-user text-muted"></i>
+            <a href="/authors.html">
+                <strong class="icon-label">全部作者</strong>
+            </a>
+        </blockquote>
+        <ul class="nav nav-pills" style="margin-top:5px;">
+            <li>
+                <a href="/authors/michael.html">
+                    <span>Michael</span>
+                    <span>(25)</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+</aside>
+
+
+<script type="text/javascript">
+
+$('.popover-weixin').popover({
+    html: true,
+    trigger: 'hover',
+    placement: 'left',
+    title: '微信 扫一扫',
+    content: '<center><img style="width:100px;height:100px;" src="http://www.footballzone.cn/static/img/zy_wx.jpg" /></center>'
+});
+
+</script>        </div>
     </div>
 </div>
 <div class="container hidden-lg hidden-md hidden-sm" style="padding-top:20px;background-color:#f7f8f9;">
     <div class="row">
         <div class="col-xs-12">
             <article style="background-color:white;box-shadow:1px 1px 1px #ccc;">
-                <div class="" style="padding:5px 15px;">
-                    <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
-                </div>
-                <div class="">
-                    <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
-                </div>
-                <div class="" style="font-size:14px;line-height:24px;padding:7px 15px;">
-                    <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
-                </div>
+                <a href="/posts/7.html" target="_blank">
+                    <div class="" style="padding:5px 15px;">
+                        <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
+                    </div>
+                    <div class="">
+                        <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
+                    </div>
+                    <div class="" style="font-size:14px;line-height:24px;padding:7px 15px;">
+                        <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
+                    </div>
+                </a>
                 <hr style="margin:0px;">
                 <div class="" style="font-size:12px;padding:7px 15px;">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="pull-left">
+                                <a class="" href="/categories/ji-zhu.html" target="_blank">
+                                    <i class="fa fa-bookmark text-muted"></i>
+                                    <span class="text-muted">技术</span>
+                                </a>
+                            </div>
+                            <div class="pull-right">
                                 <a class="" style="margin-right:15px;" href="/authors/michael.html" target="_blank">
                                     <i class="fa fa-user text-muted"></i>
                                     <span class="text-muted">Michael</span>
@@ -695,20 +812,28 @@
             </article>
             <br>
             <article style="background-color:white;box-shadow:1px 1px 1px #ccc;">
-                <div class="" style="padding:5px 15px;">
-                    <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
-                </div>
-                <div class="">
-                    <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
-                </div>
-                <div class="" style="font-size:14px;line-height:24px;padding:7px 15px;">
-                    <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
-                </div>
+                <a href="/posts/2.html" target="_blank">
+                    <div class="" style="padding:5px 15px;">
+                        <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
+                    </div>
+                    <div class="">
+                        <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
+                    </div>
+                    <div class="" style="font-size:14px;line-height:24px;padding:7px 15px;">
+                        <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
+                    </div>
+                </a>
                 <hr style="margin:0px;">
                 <div class="" style="font-size:12px;padding:7px 15px;">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="pull-left">
+                                <a class="" href="/categories/ji-zhu.html" target="_blank">
+                                    <i class="fa fa-bookmark text-muted"></i>
+                                    <span class="text-muted">技术</span>
+                                </a>
+                            </div>
+                            <div class="pull-right">
                                 <a class="" style="margin-right:15px;" href="/authors/michael.html" target="_blank">
                                     <i class="fa fa-user text-muted"></i>
                                     <span class="text-muted">Michael</span>
@@ -725,20 +850,28 @@
             </article>
             <br>
             <article style="background-color:white;box-shadow:1px 1px 1px #ccc;">
-                <div class="" style="padding:5px 15px;">
-                    <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
-                </div>
-                <div class="">
-                    <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
-                </div>
-                <div class="" style="font-size:14px;line-height:24px;padding:7px 15px;">
-                    <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
-                </div>
+                <a href="/posts/8.html" target="_blank">
+                    <div class="" style="padding:5px 15px;">
+                        <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
+                    </div>
+                    <div class="">
+                        <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
+                    </div>
+                    <div class="" style="font-size:14px;line-height:24px;padding:7px 15px;">
+                        <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
+                    </div>
+                </a>
                 <hr style="margin:0px;">
                 <div class="" style="font-size:12px;padding:7px 15px;">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="pull-left">
+                                <a class="" href="/categories/ji-zhu.html" target="_blank">
+                                    <i class="fa fa-bookmark text-muted"></i>
+                                    <span class="text-muted">技术</span>
+                                </a>
+                            </div>
+                            <div class="pull-right">
                                 <a class="" style="margin-right:15px;" href="/authors/michael.html" target="_blank">
                                     <i class="fa fa-user text-muted"></i>
                                     <span class="text-muted">Michael</span>
@@ -755,20 +888,28 @@
             </article>
             <br>
             <article style="background-color:white;box-shadow:1px 1px 1px #ccc;">
-                <div class="" style="padding:5px 15px;">
-                    <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
-                </div>
-                <div class="">
-                    <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
-                </div>
-                <div class="" style="font-size:14px;line-height:24px;padding:7px 15px;">
-                    <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
-                </div>
+                <a href="/posts/14.html" target="_blank">
+                    <div class="" style="padding:5px 15px;">
+                        <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
+                    </div>
+                    <div class="">
+                        <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
+                    </div>
+                    <div class="" style="font-size:14px;line-height:24px;padding:7px 15px;">
+                        <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
+                    </div>
+                </a>
                 <hr style="margin:0px;">
                 <div class="" style="font-size:12px;padding:7px 15px;">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="pull-left">
+                                <a class="" href="/categories/ji-zhu.html" target="_blank">
+                                    <i class="fa fa-bookmark text-muted"></i>
+                                    <span class="text-muted">技术</span>
+                                </a>
+                            </div>
+                            <div class="pull-right">
                                 <a class="" style="margin-right:15px;" href="/authors/michael.html" target="_blank">
                                     <i class="fa fa-user text-muted"></i>
                                     <span class="text-muted">Michael</span>
@@ -785,20 +926,28 @@
             </article>
             <br>
             <article style="background-color:white;box-shadow:1px 1px 1px #ccc;">
-                <div class="" style="padding:5px 15px;">
-                    <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
-                </div>
-                <div class="">
-                    <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
-                </div>
-                <div class="" style="font-size:14px;line-height:24px;padding:7px 15px;">
-                    <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
-                </div>
+                <a href="/posts/25.html" target="_blank">
+                    <div class="" style="padding:5px 15px;">
+                        <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
+                    </div>
+                    <div class="">
+                        <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
+                    </div>
+                    <div class="" style="font-size:14px;line-height:24px;padding:7px 15px;">
+                        <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
+                    </div>
+                </a>
                 <hr style="margin:0px;">
                 <div class="" style="font-size:12px;padding:7px 15px;">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="pull-left">
+                                <a class="" href="/categories/ji-zhu.html" target="_blank">
+                                    <i class="fa fa-bookmark text-muted"></i>
+                                    <span class="text-muted">技术</span>
+                                </a>
+                            </div>
+                            <div class="pull-right">
                                 <a class="" style="margin-right:15px;" href="/authors/michael.html" target="_blank">
                                     <i class="fa fa-user text-muted"></i>
                                     <span class="text-muted">Michael</span>
@@ -815,20 +964,28 @@
             </article>
             <br>
             <article style="background-color:white;box-shadow:1px 1px 1px #ccc;">
-                <div class="" style="padding:5px 15px;">
-                    <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
-                </div>
-                <div class="">
-                    <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
-                </div>
-                <div class="" style="font-size:14px;line-height:24px;padding:7px 15px;">
-                    <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
-                </div>
+                <a href="/posts/9.html" target="_blank">
+                    <div class="" style="padding:5px 15px;">
+                        <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
+                    </div>
+                    <div class="">
+                        <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
+                    </div>
+                    <div class="" style="font-size:14px;line-height:24px;padding:7px 15px;">
+                        <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
+                    </div>
+                </a>
                 <hr style="margin:0px;">
                 <div class="" style="font-size:12px;padding:7px 15px;">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="pull-left">
+                                <a class="" href="/categories/ji-zhu.html" target="_blank">
+                                    <i class="fa fa-bookmark text-muted"></i>
+                                    <span class="text-muted">技术</span>
+                                </a>
+                            </div>
+                            <div class="pull-right">
                                 <a class="" style="margin-right:15px;" href="/authors/michael.html" target="_blank">
                                     <i class="fa fa-user text-muted"></i>
                                     <span class="text-muted">Michael</span>
@@ -845,20 +1002,28 @@
             </article>
             <br>
             <article style="background-color:white;box-shadow:1px 1px 1px #ccc;">
-                <div class="" style="padding:5px 15px;">
-                    <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
-                </div>
-                <div class="">
-                    <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
-                </div>
-                <div class="" style="font-size:14px;line-height:24px;padding:7px 15px;">
-                    <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
-                </div>
+                <a href="/posts/12.html" target="_blank">
+                    <div class="" style="padding:5px 15px;">
+                        <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
+                    </div>
+                    <div class="">
+                        <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
+                    </div>
+                    <div class="" style="font-size:14px;line-height:24px;padding:7px 15px;">
+                        <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
+                    </div>
+                </a>
                 <hr style="margin:0px;">
                 <div class="" style="font-size:12px;padding:7px 15px;">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="pull-left">
+                                <a class="" href="/categories/ji-zhu.html" target="_blank">
+                                    <i class="fa fa-bookmark text-muted"></i>
+                                    <span class="text-muted">技术</span>
+                                </a>
+                            </div>
+                            <div class="pull-right">
                                 <a class="" style="margin-right:15px;" href="/authors/michael.html" target="_blank">
                                     <i class="fa fa-user text-muted"></i>
                                     <span class="text-muted">Michael</span>
@@ -875,20 +1040,28 @@
             </article>
             <br>
             <article style="background-color:white;box-shadow:1px 1px 1px #ccc;">
-                <div class="" style="padding:5px 15px;">
-                    <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
-                </div>
-                <div class="">
-                    <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
-                </div>
-                <div class="" style="font-size:14px;line-height:24px;padding:7px 15px;">
-                    <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
-                </div>
+                <a href="/posts/6.html" target="_blank">
+                    <div class="" style="padding:5px 15px;">
+                        <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
+                    </div>
+                    <div class="">
+                        <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
+                    </div>
+                    <div class="" style="font-size:14px;line-height:24px;padding:7px 15px;">
+                        <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
+                    </div>
+                </a>
                 <hr style="margin:0px;">
                 <div class="" style="font-size:12px;padding:7px 15px;">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="pull-left">
+                                <a class="" href="/categories/ji-zhu.html" target="_blank">
+                                    <i class="fa fa-bookmark text-muted"></i>
+                                    <span class="text-muted">技术</span>
+                                </a>
+                            </div>
+                            <div class="pull-right">
                                 <a class="" style="margin-right:15px;" href="/authors/michael.html" target="_blank">
                                     <i class="fa fa-user text-muted"></i>
                                     <span class="text-muted">Michael</span>
@@ -905,20 +1078,28 @@
             </article>
             <br>
             <article style="background-color:white;box-shadow:1px 1px 1px #ccc;">
-                <div class="" style="padding:5px 15px;">
-                    <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
-                </div>
-                <div class="">
-                    <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
-                </div>
-                <div class="" style="font-size:14px;line-height:24px;padding:7px 15px;">
-                    <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
-                </div>
+                <a href="/posts/1.html" target="_blank">
+                    <div class="" style="padding:5px 15px;">
+                        <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
+                    </div>
+                    <div class="">
+                        <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
+                    </div>
+                    <div class="" style="font-size:14px;line-height:24px;padding:7px 15px;">
+                        <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
+                    </div>
+                </a>
                 <hr style="margin:0px;">
                 <div class="" style="font-size:12px;padding:7px 15px;">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="pull-left">
+                                <a class="" href="/categories/ji-zhu.html" target="_blank">
+                                    <i class="fa fa-bookmark text-muted"></i>
+                                    <span class="text-muted">技术</span>
+                                </a>
+                            </div>
+                            <div class="pull-right">
                                 <a class="" style="margin-right:15px;" href="/authors/michael.html" target="_blank">
                                     <i class="fa fa-user text-muted"></i>
                                     <span class="text-muted">Michael</span>
@@ -935,20 +1116,28 @@
             </article>
             <br>
             <article style="background-color:white;box-shadow:1px 1px 1px #ccc;">
-                <div class="" style="padding:5px 15px;">
-                    <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
-                </div>
-                <div class="">
-                    <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
-                </div>
-                <div class="" style="font-size:14px;line-height:24px;padding:7px 15px;">
-                    <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
-                </div>
+                <a href="/posts/22.html" target="_blank">
+                    <div class="" style="padding:5px 15px;">
+                        <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
+                    </div>
+                    <div class="">
+                        <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
+                    </div>
+                    <div class="" style="font-size:14px;line-height:24px;padding:7px 15px;">
+                        <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
+                    </div>
+                </a>
                 <hr style="margin:0px;">
                 <div class="" style="font-size:12px;padding:7px 15px;">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="pull-left">
+                                <a class="" href="/categories/ji-zhu.html" target="_blank">
+                                    <i class="fa fa-bookmark text-muted"></i>
+                                    <span class="text-muted">技术</span>
+                                </a>
+                            </div>
+                            <div class="pull-right">
                                 <a class="" style="margin-right:15px;" href="/authors/michael.html" target="_blank">
                                     <i class="fa fa-user text-muted"></i>
                                     <span class="text-muted">Michael</span>
@@ -1017,8 +1206,10 @@
         </div>
     </div>
 </div>
+        </div>
 
-<footer style="background-color:#456;">
+        <div class="base-footer">
+<footer style="background-color:#333;">
     <hr style="margin:0px;">
     <div class="container">
         <div class="" style="padding:15px 0px;">
@@ -1052,14 +1243,15 @@
             </div>
         </div>
     </div>
-</footer>
-        <script src="/theme/js/jquery.min.js"></script>
+</footer>        </div>
 
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="/theme/js/bootstrap.min.js"></script>
 
-        <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-        <script src="/theme/js/respond.min.js"></script>
-
+        <script type="text/javascript">
+        $(window).resize(function() {
+            $('.base-content').css('min-height',
+                $(window).height()-$('.base-navbar').height()-$('.base-footer').height());
+        });
+        $(window).resize();
+        </script>
     </body>
 </html>
