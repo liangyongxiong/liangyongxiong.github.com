@@ -74,6 +74,7 @@
 
                             <li >
                                 <a href="/categories/ji-zhu.html" target="_blank">
+                                    <i class="fa fa-bookmark hidden-lg hidden-md hidden-sm" style="margin-right:5px;color:white;"></i>
                                     <span style="color:white;">技术</span>
                                 </a>
                             </li>
@@ -81,7 +82,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li>    
                             <a href="/archives.html">
-                                <i class="fa fa-th-list" style="color:white;"></i>
+                                <i class="fa fa-th-list" style="margin-right:3px;color:white;"></i>
                                 <span style="color:white;">文章列表</span>
                             </a>
                         </li>
@@ -93,13 +94,14 @@
 
         <div class="base-content">
 <div class="container hidden-xs">
+
 <br>
-<div id="home-carousel" class="carousel slide" data-ride="carousel">
+<div id="home-pc-carousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
-        <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#home-carousel" data-slide-to="1"></li>
-        <li data-target="#home-carousel" data-slide-to="2"></li>
+        <li data-target="#home-pc-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#home-pc-carousel" data-slide-to="1"></li>
+        <li data-target="#home-pc-carousel" data-slide-to="2"></li>
     </ol>
 
     <!-- Wrapper for slides -->
@@ -125,14 +127,19 @@
     </div>
 
     <!-- Controls -->
-    <a class="left carousel-control" href="#home-carousel" data-slide="prev">
+    <a class="left carousel-control" href="#home-pc-carousel" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left"></span>
     </a>
-    <a class="right carousel-control" href="#home-carousel" data-slide="next">
+    <a class="right carousel-control" href="#home-pc-carousel" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
 </div>
-<hr>
+<div class="page-header">
+    <h3>
+        <i class="fa fa-home text-muted"></i>
+        <b class="icon-label text-muted">全部文章</b>
+    </h3>
+</div>
     <div class="row">
         <div class="col-md-9 col-sm-12">
             <article>
@@ -148,14 +155,14 @@
                                 </a>
                             </div>
                             <div class="" style="margin:5px 0px;font-size:12px;">
-                                <a href="/authors/michael.html" target="_blank">
-                                    <i class="fa fa-user text-muted"></i>
-                                    <span class="text-muted">Michael</span>
-                                </a>
-                                <span style="margin-left:10px;">
-                                    <i class="fa fa-clock-o text-muted"></i>
-                                    <time class="text-muted" datetime="2013-11-06T10:30:00+08:00">2013-11-06</time>
-                                </span>
+                                <div class="pull-left" style="margin-right:15px;">
+                                    <a href="/authors/michael.html" target="_blank">
+                                        <i class="fa fa-user text-muted"></i>
+                                        <span class="text-muted">Michael</span>
+                                    </a>
+                                </div>
+                                <i class="fa fa-clock-o text-muted"></i>
+                                <time class="text-muted" datetime="2013-11-06T10:30:00+08:00">2013-11-06</time>
                             </div>
                             <div class="summary">
                                 <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
@@ -163,6 +170,12 @@
                             <div class="" style="margin:5px 0px;font-size:12px;">
                                 <div class="container-fluid">
                                     <div class="row">
+                                        <div class="pull-left" style="margin-right:15px;">
+                                            <a href="/categories/ji-zhu.html" target="_blank">
+                                                <i class="fa fa-bookmark text-muted"></i>
+                                                <span class="text-muted">技术</span>
+                                            </a>
+                                        </div>
                                         <div class="pull-left">
     <i class="fa fa-tags text-muted"></i>
         <a href="/tags/python.html">
@@ -200,14 +213,14 @@
                                 </a>
                             </div>
                             <div class="" style="margin:5px 0px;font-size:12px;">
-                                <a href="/authors/michael.html" target="_blank">
-                                    <i class="fa fa-user text-muted"></i>
-                                    <span class="text-muted">Michael</span>
-                                </a>
-                                <span style="margin-left:10px;">
-                                    <i class="fa fa-clock-o text-muted"></i>
-                                    <time class="text-muted" datetime="2013-11-06T10:30:00+08:00">2013-11-06</time>
-                                </span>
+                                <div class="pull-left" style="margin-right:15px;">
+                                    <a href="/authors/michael.html" target="_blank">
+                                        <i class="fa fa-user text-muted"></i>
+                                        <span class="text-muted">Michael</span>
+                                    </a>
+                                </div>
+                                <i class="fa fa-clock-o text-muted"></i>
+                                <time class="text-muted" datetime="2013-11-06T10:30:00+08:00">2013-11-06</time>
                             </div>
                             <div class="summary">
                                 <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
@@ -215,6 +228,12 @@
                             <div class="" style="margin:5px 0px;font-size:12px;">
                                 <div class="container-fluid">
                                     <div class="row">
+                                        <div class="pull-left" style="margin-right:15px;">
+                                            <a href="/categories/ji-zhu.html" target="_blank">
+                                                <i class="fa fa-bookmark text-muted"></i>
+                                                <span class="text-muted">技术</span>
+                                            </a>
+                                        </div>
                                         <div class="pull-left">
     <i class="fa fa-tags text-muted"></i>
         <a href="/tags/python.html">
@@ -252,14 +271,14 @@
                                 </a>
                             </div>
                             <div class="" style="margin:5px 0px;font-size:12px;">
-                                <a href="/authors/michael.html" target="_blank">
-                                    <i class="fa fa-user text-muted"></i>
-                                    <span class="text-muted">Michael</span>
-                                </a>
-                                <span style="margin-left:10px;">
-                                    <i class="fa fa-clock-o text-muted"></i>
-                                    <time class="text-muted" datetime="2013-11-06T10:30:00+08:00">2013-11-06</time>
-                                </span>
+                                <div class="pull-left" style="margin-right:15px;">
+                                    <a href="/authors/michael.html" target="_blank">
+                                        <i class="fa fa-user text-muted"></i>
+                                        <span class="text-muted">Michael</span>
+                                    </a>
+                                </div>
+                                <i class="fa fa-clock-o text-muted"></i>
+                                <time class="text-muted" datetime="2013-11-06T10:30:00+08:00">2013-11-06</time>
                             </div>
                             <div class="summary">
                                 <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
@@ -267,6 +286,12 @@
                             <div class="" style="margin:5px 0px;font-size:12px;">
                                 <div class="container-fluid">
                                     <div class="row">
+                                        <div class="pull-left" style="margin-right:15px;">
+                                            <a href="/categories/ji-zhu.html" target="_blank">
+                                                <i class="fa fa-bookmark text-muted"></i>
+                                                <span class="text-muted">技术</span>
+                                            </a>
+                                        </div>
                                         <div class="pull-left">
     <i class="fa fa-tags text-muted"></i>
         <a href="/tags/python.html">
@@ -304,14 +329,14 @@
                                 </a>
                             </div>
                             <div class="" style="margin:5px 0px;font-size:12px;">
-                                <a href="/authors/michael.html" target="_blank">
-                                    <i class="fa fa-user text-muted"></i>
-                                    <span class="text-muted">Michael</span>
-                                </a>
-                                <span style="margin-left:10px;">
-                                    <i class="fa fa-clock-o text-muted"></i>
-                                    <time class="text-muted" datetime="2013-11-06T10:30:00+08:00">2013-11-06</time>
-                                </span>
+                                <div class="pull-left" style="margin-right:15px;">
+                                    <a href="/authors/michael.html" target="_blank">
+                                        <i class="fa fa-user text-muted"></i>
+                                        <span class="text-muted">Michael</span>
+                                    </a>
+                                </div>
+                                <i class="fa fa-clock-o text-muted"></i>
+                                <time class="text-muted" datetime="2013-11-06T10:30:00+08:00">2013-11-06</time>
                             </div>
                             <div class="summary">
                                 <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
@@ -319,6 +344,12 @@
                             <div class="" style="margin:5px 0px;font-size:12px;">
                                 <div class="container-fluid">
                                     <div class="row">
+                                        <div class="pull-left" style="margin-right:15px;">
+                                            <a href="/categories/ji-zhu.html" target="_blank">
+                                                <i class="fa fa-bookmark text-muted"></i>
+                                                <span class="text-muted">技术</span>
+                                            </a>
+                                        </div>
                                         <div class="pull-left">
     <i class="fa fa-tags text-muted"></i>
         <a href="/tags/python.html">
@@ -356,14 +387,14 @@
                                 </a>
                             </div>
                             <div class="" style="margin:5px 0px;font-size:12px;">
-                                <a href="/authors/michael.html" target="_blank">
-                                    <i class="fa fa-user text-muted"></i>
-                                    <span class="text-muted">Michael</span>
-                                </a>
-                                <span style="margin-left:10px;">
-                                    <i class="fa fa-clock-o text-muted"></i>
-                                    <time class="text-muted" datetime="2013-11-06T10:30:00+08:00">2013-11-06</time>
-                                </span>
+                                <div class="pull-left" style="margin-right:15px;">
+                                    <a href="/authors/michael.html" target="_blank">
+                                        <i class="fa fa-user text-muted"></i>
+                                        <span class="text-muted">Michael</span>
+                                    </a>
+                                </div>
+                                <i class="fa fa-clock-o text-muted"></i>
+                                <time class="text-muted" datetime="2013-11-06T10:30:00+08:00">2013-11-06</time>
                             </div>
                             <div class="summary">
                                 <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
@@ -371,6 +402,12 @@
                             <div class="" style="margin:5px 0px;font-size:12px;">
                                 <div class="container-fluid">
                                     <div class="row">
+                                        <div class="pull-left" style="margin-right:15px;">
+                                            <a href="/categories/ji-zhu.html" target="_blank">
+                                                <i class="fa fa-bookmark text-muted"></i>
+                                                <span class="text-muted">技术</span>
+                                            </a>
+                                        </div>
                                         <div class="pull-left">
     <i class="fa fa-tags text-muted"></i>
         <a href="/tags/python.html">
@@ -408,14 +445,14 @@
                                 </a>
                             </div>
                             <div class="" style="margin:5px 0px;font-size:12px;">
-                                <a href="/authors/michael.html" target="_blank">
-                                    <i class="fa fa-user text-muted"></i>
-                                    <span class="text-muted">Michael</span>
-                                </a>
-                                <span style="margin-left:10px;">
-                                    <i class="fa fa-clock-o text-muted"></i>
-                                    <time class="text-muted" datetime="2013-11-06T10:30:00+08:00">2013-11-06</time>
-                                </span>
+                                <div class="pull-left" style="margin-right:15px;">
+                                    <a href="/authors/michael.html" target="_blank">
+                                        <i class="fa fa-user text-muted"></i>
+                                        <span class="text-muted">Michael</span>
+                                    </a>
+                                </div>
+                                <i class="fa fa-clock-o text-muted"></i>
+                                <time class="text-muted" datetime="2013-11-06T10:30:00+08:00">2013-11-06</time>
                             </div>
                             <div class="summary">
                                 <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
@@ -423,6 +460,12 @@
                             <div class="" style="margin:5px 0px;font-size:12px;">
                                 <div class="container-fluid">
                                     <div class="row">
+                                        <div class="pull-left" style="margin-right:15px;">
+                                            <a href="/categories/ji-zhu.html" target="_blank">
+                                                <i class="fa fa-bookmark text-muted"></i>
+                                                <span class="text-muted">技术</span>
+                                            </a>
+                                        </div>
                                         <div class="pull-left">
     <i class="fa fa-tags text-muted"></i>
         <a href="/tags/python.html">
@@ -460,14 +503,14 @@
                                 </a>
                             </div>
                             <div class="" style="margin:5px 0px;font-size:12px;">
-                                <a href="/authors/michael.html" target="_blank">
-                                    <i class="fa fa-user text-muted"></i>
-                                    <span class="text-muted">Michael</span>
-                                </a>
-                                <span style="margin-left:10px;">
-                                    <i class="fa fa-clock-o text-muted"></i>
-                                    <time class="text-muted" datetime="2013-11-06T10:30:00+08:00">2013-11-06</time>
-                                </span>
+                                <div class="pull-left" style="margin-right:15px;">
+                                    <a href="/authors/michael.html" target="_blank">
+                                        <i class="fa fa-user text-muted"></i>
+                                        <span class="text-muted">Michael</span>
+                                    </a>
+                                </div>
+                                <i class="fa fa-clock-o text-muted"></i>
+                                <time class="text-muted" datetime="2013-11-06T10:30:00+08:00">2013-11-06</time>
                             </div>
                             <div class="summary">
                                 <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
@@ -475,6 +518,12 @@
                             <div class="" style="margin:5px 0px;font-size:12px;">
                                 <div class="container-fluid">
                                     <div class="row">
+                                        <div class="pull-left" style="margin-right:15px;">
+                                            <a href="/categories/ji-zhu.html" target="_blank">
+                                                <i class="fa fa-bookmark text-muted"></i>
+                                                <span class="text-muted">技术</span>
+                                            </a>
+                                        </div>
                                         <div class="pull-left">
     <i class="fa fa-tags text-muted"></i>
         <a href="/tags/python.html">
@@ -512,14 +561,14 @@
                                 </a>
                             </div>
                             <div class="" style="margin:5px 0px;font-size:12px;">
-                                <a href="/authors/michael.html" target="_blank">
-                                    <i class="fa fa-user text-muted"></i>
-                                    <span class="text-muted">Michael</span>
-                                </a>
-                                <span style="margin-left:10px;">
-                                    <i class="fa fa-clock-o text-muted"></i>
-                                    <time class="text-muted" datetime="2013-11-06T10:30:00+08:00">2013-11-06</time>
-                                </span>
+                                <div class="pull-left" style="margin-right:15px;">
+                                    <a href="/authors/michael.html" target="_blank">
+                                        <i class="fa fa-user text-muted"></i>
+                                        <span class="text-muted">Michael</span>
+                                    </a>
+                                </div>
+                                <i class="fa fa-clock-o text-muted"></i>
+                                <time class="text-muted" datetime="2013-11-06T10:30:00+08:00">2013-11-06</time>
                             </div>
                             <div class="summary">
                                 <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
@@ -527,6 +576,12 @@
                             <div class="" style="margin:5px 0px;font-size:12px;">
                                 <div class="container-fluid">
                                     <div class="row">
+                                        <div class="pull-left" style="margin-right:15px;">
+                                            <a href="/categories/ji-zhu.html" target="_blank">
+                                                <i class="fa fa-bookmark text-muted"></i>
+                                                <span class="text-muted">技术</span>
+                                            </a>
+                                        </div>
                                         <div class="pull-left">
     <i class="fa fa-tags text-muted"></i>
         <a href="/tags/python.html">
@@ -564,14 +619,14 @@
                                 </a>
                             </div>
                             <div class="" style="margin:5px 0px;font-size:12px;">
-                                <a href="/authors/michael.html" target="_blank">
-                                    <i class="fa fa-user text-muted"></i>
-                                    <span class="text-muted">Michael</span>
-                                </a>
-                                <span style="margin-left:10px;">
-                                    <i class="fa fa-clock-o text-muted"></i>
-                                    <time class="text-muted" datetime="2013-11-06T10:30:00+08:00">2013-11-06</time>
-                                </span>
+                                <div class="pull-left" style="margin-right:15px;">
+                                    <a href="/authors/michael.html" target="_blank">
+                                        <i class="fa fa-user text-muted"></i>
+                                        <span class="text-muted">Michael</span>
+                                    </a>
+                                </div>
+                                <i class="fa fa-clock-o text-muted"></i>
+                                <time class="text-muted" datetime="2013-11-06T10:30:00+08:00">2013-11-06</time>
                             </div>
                             <div class="summary">
                                 <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
@@ -579,6 +634,12 @@
                             <div class="" style="margin:5px 0px;font-size:12px;">
                                 <div class="container-fluid">
                                     <div class="row">
+                                        <div class="pull-left" style="margin-right:15px;">
+                                            <a href="/categories/ji-zhu.html" target="_blank">
+                                                <i class="fa fa-bookmark text-muted"></i>
+                                                <span class="text-muted">技术</span>
+                                            </a>
+                                        </div>
                                         <div class="pull-left">
     <i class="fa fa-tags text-muted"></i>
         <a href="/tags/python.html">
@@ -616,14 +677,14 @@
                                 </a>
                             </div>
                             <div class="" style="margin:5px 0px;font-size:12px;">
-                                <a href="/authors/michael.html" target="_blank">
-                                    <i class="fa fa-user text-muted"></i>
-                                    <span class="text-muted">Michael</span>
-                                </a>
-                                <span style="margin-left:10px;">
-                                    <i class="fa fa-clock-o text-muted"></i>
-                                    <time class="text-muted" datetime="2013-11-06T10:30:00+08:00">2013-11-06</time>
-                                </span>
+                                <div class="pull-left" style="margin-right:15px;">
+                                    <a href="/authors/michael.html" target="_blank">
+                                        <i class="fa fa-user text-muted"></i>
+                                        <span class="text-muted">Michael</span>
+                                    </a>
+                                </div>
+                                <i class="fa fa-clock-o text-muted"></i>
+                                <time class="text-muted" datetime="2013-11-06T10:30:00+08:00">2013-11-06</time>
                             </div>
                             <div class="summary">
                                 <span style="color:#666;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</span>
@@ -631,6 +692,12 @@
                             <div class="" style="margin:5px 0px;font-size:12px;">
                                 <div class="container-fluid">
                                     <div class="row">
+                                        <div class="pull-left" style="margin-right:15px;">
+                                            <a href="/categories/ji-zhu.html" target="_blank">
+                                                <i class="fa fa-bookmark text-muted"></i>
+                                                <span class="text-muted">技术</span>
+                                            </a>
+                                        </div>
                                         <div class="pull-left">
     <i class="fa fa-tags text-muted"></i>
         <a href="/tags/python.html">
@@ -658,20 +725,26 @@
 
 <div class="container-fluid hidden-lg hidden-md hidden-sm">
     <div class="row">
-        <ul class="pager">
-            <li class="previous disabled">
-                <a href="javascript:void(0)">
-                    <i class="fa fa-chevron-left"></i>
-                    <b>上一页</b>
+        <div class="pull-left" style="width:50%;" align="center">
+            <div class="" style="padding-right:10px;">
+                <a class="no-decoration" href="javascript:void(0)">
+                    <div class="" style="padding:10px;background-color:#999;">
+                        <i class="fa fa-chevron-left" style="color:white;"></i>
+                        <b class="icon-label" style="color:white;">上一页</b>
+                    </div>
                 </a>
-            </li>
-            <li class="next">
-                <a href="/pagination/index/2.html">
-                    <b>下一页</b>
-                    <i class="fa fa-chevron-right"></i>
+            </div>
+        </div>
+        <div class="pull-right" style="width:50%;" align="center">
+            <div class="" style="padding-left:10px;">
+                <a class="no-decoration" href="/pagination/index/2.html">
+                    <div class="" style="padding:10px;background-color:#345;">
+                        <b style="color:white;">下一页</b>
+                        <i class="fa fa-chevron-right icon-label" style="color:white;"></i>
+                    </div>
                 </a>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 </div>
 <div class="container-fluid hidden-xs">
@@ -713,7 +786,7 @@
 <aside>
     <section>
         <blockquote style="margin:0px;padding:10px;font-size:16px;background-color:#f7f8f9;">
-            <i class="fa fa-home text-muted"></i>
+            <i class="fa fa-asterisk text-muted"></i>
             <a href="#">
                 <strong class="icon-label">联系方式</strong>
             </a>
@@ -797,19 +870,60 @@ $('.popover-weixin').popover({
     trigger: 'hover',
     placement: 'left',
     title: '微信 扫一扫',
-    content: '<center><img style="width:100px;height:100px;" src="http://www.footballzone.cn/static/img/zy_wx.jpg" /></center>'
+    content: '<center><img style="width:100px;height:100px;" src="http://www.footballzone.cn/static/img/lyx_wx.jpg" /></center>'
 });
 
 </script>        </div>
     </div>
 </div>
-<div class="container hidden-lg hidden-md hidden-sm" style="padding-top:20px;background-color:#f7f8f9;">
+<div class="container hidden-lg hidden-md hidden-sm" style="padding-top:20px;background-color:#f5f6f7;">
+
+<div id="home-mobile-carousel" class="carousel slide" data-ride="carousel">
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img data-src="holder.js/600x320/auto/#777:#555/text:First Slide" style="width:100%;">
+            <div class="carousel-caption">
+                <span>First Slide</span>
+            </div>
+        </div>
+        <div class="item">
+            <img data-src="holder.js/600x320/auto/#777:#555/text:Second Slide" style="width:100%;">
+            <div class="carousel-caption">
+                <span>Second Slide</span>
+            </div>
+        </div>
+        <div class="item">
+            <img data-src="holder.js/600x320/auto/#777:#555/text:Third Slide" style="width:100%;">
+            <div class="carousel-caption">
+                <span>Third Slide</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#home-mobile-carousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#home-mobile-carousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+<br>
+<div class="" style="padding:7px 15px;background-color:white;box-shadow:1px 1px 1px #ccc;">
+    <h4>
+        <i class="fa fa-home text-muted"></i>
+        <b class="icon-label text-muted">全部文章</b>
+    </h4>
+</div>
+    <br>
     <div class="row">
         <div class="col-xs-12">
             <article style="background-color:white;box-shadow:1px 1px 1px #ccc;">
-                <a href="/posts/23.html" target="_blank">
+                <a class="no-decoration" href="/posts/23.html" target="_blank">
                     <div class="" style="padding:5px 15px;">
-                        <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
+                        <span style="line-height:30px;font-size:16px;color:black;">使用 Pelican + Github 搭建静态博客</span>
                     </div>
                     <div class="">
                         <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
@@ -845,9 +959,9 @@ $('.popover-weixin').popover({
             </article>
             <br>
             <article style="background-color:white;box-shadow:1px 1px 1px #ccc;">
-                <a href="/posts/19.html" target="_blank">
+                <a class="no-decoration" href="/posts/19.html" target="_blank">
                     <div class="" style="padding:5px 15px;">
-                        <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
+                        <span style="line-height:30px;font-size:16px;color:black;">使用 Pelican + Github 搭建静态博客</span>
                     </div>
                     <div class="">
                         <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
@@ -883,9 +997,9 @@ $('.popover-weixin').popover({
             </article>
             <br>
             <article style="background-color:white;box-shadow:1px 1px 1px #ccc;">
-                <a href="/posts/5.html" target="_blank">
+                <a class="no-decoration" href="/posts/5.html" target="_blank">
                     <div class="" style="padding:5px 15px;">
-                        <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
+                        <span style="line-height:30px;font-size:16px;color:black;">使用 Pelican + Github 搭建静态博客</span>
                     </div>
                     <div class="">
                         <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
@@ -921,9 +1035,9 @@ $('.popover-weixin').popover({
             </article>
             <br>
             <article style="background-color:white;box-shadow:1px 1px 1px #ccc;">
-                <a href="/posts/10.html" target="_blank">
+                <a class="no-decoration" href="/posts/10.html" target="_blank">
                     <div class="" style="padding:5px 15px;">
-                        <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
+                        <span style="line-height:30px;font-size:16px;color:black;">使用 Pelican + Github 搭建静态博客</span>
                     </div>
                     <div class="">
                         <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
@@ -959,9 +1073,9 @@ $('.popover-weixin').popover({
             </article>
             <br>
             <article style="background-color:white;box-shadow:1px 1px 1px #ccc;">
-                <a href="/posts/11.html" target="_blank">
+                <a class="no-decoration" href="/posts/11.html" target="_blank">
                     <div class="" style="padding:5px 15px;">
-                        <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
+                        <span style="line-height:30px;font-size:16px;color:black;">使用 Pelican + Github 搭建静态博客</span>
                     </div>
                     <div class="">
                         <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
@@ -997,9 +1111,9 @@ $('.popover-weixin').popover({
             </article>
             <br>
             <article style="background-color:white;box-shadow:1px 1px 1px #ccc;">
-                <a href="/posts/13.html" target="_blank">
+                <a class="no-decoration" href="/posts/13.html" target="_blank">
                     <div class="" style="padding:5px 15px;">
-                        <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
+                        <span style="line-height:30px;font-size:16px;color:black;">使用 Pelican + Github 搭建静态博客</span>
                     </div>
                     <div class="">
                         <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
@@ -1035,9 +1149,9 @@ $('.popover-weixin').popover({
             </article>
             <br>
             <article style="background-color:white;box-shadow:1px 1px 1px #ccc;">
-                <a href="/posts/3.html" target="_blank">
+                <a class="no-decoration" href="/posts/3.html" target="_blank">
                     <div class="" style="padding:5px 15px;">
-                        <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
+                        <span style="line-height:30px;font-size:16px;color:black;">使用 Pelican + Github 搭建静态博客</span>
                     </div>
                     <div class="">
                         <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
@@ -1073,9 +1187,9 @@ $('.popover-weixin').popover({
             </article>
             <br>
             <article style="background-color:white;box-shadow:1px 1px 1px #ccc;">
-                <a href="/posts/4.html" target="_blank">
+                <a class="no-decoration" href="/posts/4.html" target="_blank">
                     <div class="" style="padding:5px 15px;">
-                        <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
+                        <span style="line-height:30px;font-size:16px;color:black;">使用 Pelican + Github 搭建静态博客</span>
                     </div>
                     <div class="">
                         <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
@@ -1111,9 +1225,9 @@ $('.popover-weixin').popover({
             </article>
             <br>
             <article style="background-color:white;box-shadow:1px 1px 1px #ccc;">
-                <a href="/posts/16.html" target="_blank">
+                <a class="no-decoration" href="/posts/16.html" target="_blank">
                     <div class="" style="padding:5px 15px;">
-                        <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
+                        <span style="line-height:30px;font-size:16px;color:black;">使用 Pelican + Github 搭建静态博客</span>
                     </div>
                     <div class="">
                         <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
@@ -1149,9 +1263,9 @@ $('.popover-weixin').popover({
             </article>
             <br>
             <article style="background-color:white;box-shadow:1px 1px 1px #ccc;">
-                <a href="/posts/17.html" target="_blank">
+                <a class="no-decoration" href="/posts/17.html" target="_blank">
                     <div class="" style="padding:5px 15px;">
-                        <span style="line-height:30px;font-size:16px;">使用 Pelican + Github 搭建静态博客</span>
+                        <span style="line-height:30px;font-size:16px;color:black;">使用 Pelican + Github 搭建静态博客</span>
                     </div>
                     <div class="">
                         <img class="" style="width:100%;" src="http://pic3.zhongsou.com/image/380da4440e5d51e942f.jpg" />
@@ -1189,20 +1303,26 @@ $('.popover-weixin').popover({
 
 <div class="container-fluid hidden-lg hidden-md hidden-sm">
     <div class="row">
-        <ul class="pager">
-            <li class="previous disabled">
-                <a href="javascript:void(0)">
-                    <i class="fa fa-chevron-left"></i>
-                    <b>上一页</b>
+        <div class="pull-left" style="width:50%;" align="center">
+            <div class="" style="padding-right:10px;">
+                <a class="no-decoration" href="javascript:void(0)">
+                    <div class="" style="padding:10px;background-color:#999;">
+                        <i class="fa fa-chevron-left" style="color:white;"></i>
+                        <b class="icon-label" style="color:white;">上一页</b>
+                    </div>
                 </a>
-            </li>
-            <li class="next">
-                <a href="/pagination/index/2.html">
-                    <b>下一页</b>
-                    <i class="fa fa-chevron-right"></i>
+            </div>
+        </div>
+        <div class="pull-right" style="width:50%;" align="center">
+            <div class="" style="padding-left:10px;">
+                <a class="no-decoration" href="/pagination/index/2.html">
+                    <div class="" style="padding:10px;background-color:#345;">
+                        <b style="color:white;">下一页</b>
+                        <i class="fa fa-chevron-right icon-label" style="color:white;"></i>
+                    </div>
                 </a>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 </div>
 <div class="container-fluid hidden-xs">
@@ -1236,6 +1356,7 @@ $('.popover-weixin').popover({
         </ul>
     </div>
 </div>
+            <br>
         </div>
     </div>
 </div>

@@ -163,3 +163,7 @@ figure.floatcenter, .align-center {
 pre {
     padding: 16px;
 }
+
+a.no-decoration:hover {
+    text-decoration: none;
+}
