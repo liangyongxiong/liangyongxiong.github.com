@@ -226,6 +226,15 @@ git clone git://github.com/getpelican/pelican-plugins.git   # 插件
 
 <p><br></p></div>
                         </div> <!-- /.entry-content -->
+
+
+                        <!-- 多说评论框 start -->
+                        <div class="ds-thread" 
+                            data-thread-key="liangyongxiong" 
+                            data-title="使用 Pelican + Github 搭建静态博客" 
+                            data-url="/posts/14.html">
+                        </div>
+                        <!-- 多说评论框 end -->
                     </article>
                 </div>
                 <div class="col-xs-3 hidden-sm hidden-xs">
@@ -283,13 +292,13 @@ git clone git://github.com/getpelican/pelican-plugins.git   # 插件
                 </a>
             </li>
             <li>
-                <a href="/tags/pelican.html">
-                    <span class="text-muted">Pelican</span>
+                <a href="/tags/python.html">
+                    <span class="text-muted">Python</span>
                 </a>
             </li>
             <li>
-                <a href="/tags/python.html">
-                    <span class="text-muted">Python</span>
+                <a href="/tags/pelican.html">
+                    <span class="text-muted">Pelican</span>
                 </a>
             </li>
         </ul>
@@ -480,9 +489,13 @@ git clone git://github.com/getpelican/pelican-plugins.git   # 插件
                                 </div>
                             </div>
                             <div id="comment_list" class="tab-pane">
-                                <div class="" style="padding:10px;">
-                                    <span class="text-muted">评论列表</span>
+                                <!-- 多说评论框 start -->
+                                <div class="ds-thread" 
+                                    data-thread-key="liangyongxiong" 
+                                    data-title="使用 Pelican + Github 搭建静态博客" 
+                                    data-url="/posts/14.html">
                                 </div>
+                                <!-- 多说评论框 end -->
                             </div>
                         </div>
                     </article>
@@ -530,6 +543,19 @@ git clone git://github.com/getpelican/pelican-plugins.git   # 插件
 </footer>        </div>
 
 
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    var duoshuoQuery = {short_name:"liangyongxiong"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
         <script type="text/javascript">
         $(window).resize(function() {
             $('.base-content').css('min-height',
