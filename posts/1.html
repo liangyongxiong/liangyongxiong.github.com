@@ -309,13 +309,13 @@ git clone git://github.com/getpelican/pelican-plugins.git   # 插件
                 </a>
             </li>
             <li>
-                <a href="/tags/python.html">
-                    <span class="text-muted">Python</span>
+                <a href="/tags/github.html">
+                    <span class="text-muted">Github</span>
                 </a>
             </li>
             <li>
-                <a href="/tags/github.html">
-                    <span class="text-muted">Github</span>
+                <a href="/tags/python.html">
+                    <span class="text-muted">Python</span>
                 </a>
             </li>
         </ul>
@@ -515,25 +515,22 @@ git clone git://github.com/getpelican/pelican-plugins.git   # 插件
                     <br>
                     <ul class="nav nav-tabs" style="margin-bottom:15px;padding:20px 20px 0px 20px;background-color:#f7f8f9;">
                         <li class="active" style="width:50%;" align="center">
-                            <a id="mobile_duoshuo_comments_tab" style="padding:5px 0px;" href="#mobile_comment_list" data-toggle="tab">
-                                <i class="fa fa-comments-o"></i>
-                                <span>评论</span>
-                                <span>(</span>
-                                <span class="ds-thread-count text-muted"
-                                    data-thread-key="1" 
-                                    data-count-type="comments"></span>
-                                <span>)</span>
+                            <a id="mobile_duoshuo_comments_tab" style="padding:10px 0px;" href="#mobile_comment_list" data-toggle="tab">
+                                <i class="fa fa-comments-o text-muted"></i>
+                                <span class="text-muted">评论 (<span class="ds-thread-count" 
+                                        data-thread-key="1" 
+                                        data-count-type="comments"></span>)</span>
                             </a>
                         </li>
                         <li style="width:50%;" align="center">
-                            <a href="#relative_posts" style="padding:5px 0px;" data-toggle="tab">
+                            <a href="#relative_posts" style="padding:10px 0px;" data-toggle="tab">
                                 <i class="fa fa-copy"></i>
                                 <span>推荐</span>
                             </a>
                         </li>
                     </ul>
                     <div class="tab-content" style="margin-bottom:30px;">
-                        <div id="mobile_comment_list" class="tab-pane">
+                        <div id="mobile_comment_list" class="tab-pane fade in active">
                             <!-- 多说评论框 start -->
                             <div class="ds-thread" 
                                 data-thread-key="1" 
@@ -542,7 +539,7 @@ git clone git://github.com/getpelican/pelican-plugins.git   # 插件
                             </div>
                             <!-- 多说评论框 end -->
                         </div>
-                        <div id="relative_posts" class="tab-pane">
+                        <div id="relative_posts" class="tab-pane fade">
                             <div class="" style="padding:10px;font-size:16px;">
                                 <!-- 多说热评文章 start -->
                                 <div class="ds-top-threads"
