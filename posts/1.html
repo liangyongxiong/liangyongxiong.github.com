@@ -3,7 +3,7 @@
 >
 
     <head>
-        <title>使用 Pelican + Github 搭建静态博客 - X - 博客</title>
+        <title>使用 Pelican + Github 搭建静态博客 | X - 博客</title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -15,13 +15,16 @@
 
 
 
-<link rel="canonical" href="/posts/1.html">
+<link rel="canonical" href="http://liangyongxiong.cn/posts/1.html">
 
-        <meta name="author" content="Michael" />
-        <meta name="keywords" content="Python,Pelican,Github" />
-        <meta name="description" content="Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。" />
+    <meta name="author" content="Michael" />
+
+    <meta name="keywords" content="Python,Pelican,Github" />
+
+    <meta name="description" content="Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。" />
 
         <!-- Enable latex plugin -->
+
 
 
 
@@ -90,56 +93,68 @@
         </div> <!-- /.navbar -->
 
         <div class="base-content">
-    <section id="content">
-        <div class="container hidden-xs">
-            <br>
-            <div class="row">
-                <div class="col-md-9 col-sm-12">
-                    <article>
-                        <header>
-                            <h1 style="font-size:30px;font-weight:bold;">使用 Pelican + Github 搭建静态博客</h1>
-                        </header>
-                        <div class="container-fluid post-info" style="margin:15px 0px;">
-                            <div class="row">
-                                <div class="pull-left">
+<section id="content">
+    <div class="container hidden-xs">
+        <br>
+        <div class="row">
+            <div class="col-md-9 col-sm-12">
+                <article>
+                    <header>
+                        <h1 style="font-size:30px;font-weight:bold;">使用 Pelican + Github 搭建静态博客</h1>
+                    </header>
+                    <div class="container-fluid post-info" style="margin:15px 0px;">
+                        <div class="row">
+                            <div class="pull-left">
+                                <span style="margin-right:15px;" title="分类">
                                     <a href="/categories/ji-zhu.html" target="_blank">
                                         <i class="fa fa-bookmark text-muted"></i>
                                         <span class="text-muted">技术</span>
                                     </a>
-                                </div>
+                                </span>
+                                <span style="margin-right:15px;" title="标签">
+                                    <i class="fa fa-tags text-muted"></i>
+                                        <a href="/tags/python.html">
+                                            <span style="color:#006cd8;">Python</span>
+                                        </a>
+                                        <span class="text-muted">/</span>
+                                        <a href="/tags/pelican.html">
+                                            <span style="color:#006cd8;">Pelican</span>
+                                        </a>
+                                        <span class="text-muted">/</span>
+                                        <a href="/tags/github.html">
+                                            <span style="color:#006cd8;">Github</span>
+                                        </a>
+                                </span>
+                                <span title="评论">
+                                    <a href="#pc_duoshuo_comments">
+                                        <i class="fa fa-comments-o text-muted"></i>
+                                        <span class="ds-thread-count text-muted"
+                                            data-thread-key="1" 
+                                            data-count-type="comments"></span>
+                                        <span class="text-muted">评论</span>
+                                    </a>
+                                </span>
+                            </div>
 
-                                <div class="pull-left" style="margin-left:20px;">
-    <i class="fa fa-tags text-muted"></i>
-        <a href="/tags/python.html">
-            <span style="color:#006cd8;">Python</span>
-        </a>
-        <span class="text-muted">/</span>
-        <a href="/tags/pelican.html">
-            <span style="color:#006cd8;">Pelican</span>
-        </a>
-        <span class="text-muted">/</span>
-        <a href="/tags/github.html">
-            <span style="color:#006cd8;">Github</span>
-        </a>
-                                </div>
-
-                                <div class="pull-right">
-                                    <a class="" style="margin-right:15px;" href="/authors/michael.html" target="_blank">
+                            <div class="pull-right">
+                                <span style="margin-right:15px;" title="作者">
+                                    <a href="/authors/michael.html" target="_blank">
                                         <i class="fa fa-user text-muted"></i>
                                         <span class="text-muted">Michael</span>
                                     </a>
+                                </span>
 
-                                    <span class="published">
-                                        <i class="fa fa-clock-o text-muted"></i>
-                                        <time class="text-muted" datetime="2013-11-06T10:30:00+08:00">2013-11-06</time>
-                                    </span>
-                                </div>
+                                <span title="时间">
+                                    <i class="fa fa-clock-o text-muted"></i>
+                                    <time class="text-muted" datetime="2013-11-06T10:30:00+08:00">2013-11-06</time>
+                                </span>
                             </div>
-                        </div><!-- /.post-info -->
-                        <div class="entry-content">
-                            <blockquote class="text-muted" style="font-size:14px;background-color:#f5f6f7;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</blockquote>
-                            <hr>
-                            <div class="" style="margin-top:30px;font-size:16px;"><h3>介绍 Pelican</h3>
+                        </div>
+                    </div><!-- /.post-info -->
+                    <div class="entry-content">
+                        <div class="text-muted" style="padding:10px 15px;font-size:14px;background-color:#f5f6f7;">Pelican 是一套开源的使用 Python 编写的静态博客生成框架，可以添加文章和和创建页面，使用 MarkDown 格式撰写文章内容，同时支持 Disqus 评论系统、RSS 和 Atom 输出、插件、主题，代码高亮等功能，采用 Jajin2 模板引擎，可以很容易的更改模板。</div>
+                        <hr>
+                        <div class="" style="margin-top:30px;font-size:16px;"><h3>介绍 Pelican</h3>
 <p>Pelican<code>[ˈpɛlɪkən]</code> 是法语 Calepin<code>[kalp ɛ̃]</code>变形词（<code>anagram</code>），Calepin 是笔记本、备忘录的意思。</p>
 <p>框架选型上，我有以下考虑，经历各种 Google + Baidu 后，最终确定了 Pelican + Github 的方案。</p>
 <ul>
@@ -225,20 +240,22 @@ git clone git://github.com/getpelican/pelican-plugins.git   # 插件
 
 
 <p><br></p></div>
-                        </div> <!-- /.entry-content -->
+                    </div> <!-- /.entry-content -->
 
 
+                    <div id="pc_duoshuo_comments">
                         <!-- 多说评论框 start -->
                         <div class="ds-thread" 
-                            data-thread-key="liangyongxiong" 
+                            data-thread-key="1" 
                             data-title="使用 Pelican + Github 搭建静态博客" 
                             data-url="/posts/1.html">
                         </div>
                         <!-- 多说评论框 end -->
-                    </article>
-                </div>
-                <div class="col-xs-3 hidden-sm hidden-xs">
-                    <br>
+                    </div>
+                </article>
+            </div>
+            <div class="col-xs-3 hidden-sm hidden-xs">
+                <br>
 
 
 <aside>
@@ -281,16 +298,11 @@ git clone git://github.com/getpelican/pelican-plugins.git   # 插件
         <br>
         <blockquote style="margin:0px;padding:10px;font-size:16px;background-color:#f7f8f9;">
             <i class="fa fa-tags text-muted"></i>
-            <a href="/tags.html">
+            <a href="/tags.html" target="_blank">
                 <strong class="icon-label">全部标签</strong>
             </a>
         </blockquote>
         <ul class="nav nav-pills" style="margin-top:5px;">
-            <li>
-                <a href="/tags/python.html">
-                    <span class="text-muted">Python</span>
-                </a>
-            </li>
             <li>
                 <a href="/tags/github.html">
                     <span class="text-muted">Github</span>
@@ -301,11 +313,16 @@ git clone git://github.com/getpelican/pelican-plugins.git   # 插件
                     <span class="text-muted">Pelican</span>
                 </a>
             </li>
+            <li>
+                <a href="/tags/python.html">
+                    <span class="text-muted">Python</span>
+                </a>
+            </li>
         </ul>
         <br>
         <blockquote style="margin:0px;padding:10px;font-size:16px;background-color:#f7f8f9;">
             <i class="fa fa-user text-muted"></i>
-            <a href="/authors.html">
+            <a href="/authors.html" target="_blank">
                 <strong class="icon-label">全部作者</strong>
             </a>
         </blockquote>
@@ -317,6 +334,33 @@ git clone git://github.com/getpelican/pelican-plugins.git   # 插件
                 </a>
             </li>
         </ul>
+        <br>
+        <blockquote style="margin:0px;padding:10px;font-size:16px;background-color:#f7f8f9;">
+            <i class="fa fa-copy text-muted"></i>
+            <strong class="icon-label">热评文章</strong>
+        </blockquote>
+        <div class="" style="padding:10px;font-size:16px;">
+            <!-- 多说热评文章 start -->
+            <div class="ds-top-threads"
+                data-range="monthly" 
+                data-num-items="5"></div>
+            <!-- 多说热评文章 end -->
+        </div>
+        <br>
+        <blockquote style="margin:0px;padding:10px;font-size:16px;background-color:#f7f8f9;">
+            <i class="fa fa-comments-o text-muted"></i>
+            <strong class="icon-label">最新评论</strong>
+        </blockquote>
+        <!-- 多说最新评论 start -->
+        <div class="ds-recent-comments" 
+            data-num-items="5" 
+            data-show-avatars="1" 
+            data-show-time="1" 
+            data-show-title="1" 
+            data-show-admin="1" 
+            data-excerpt-length="70"></div>
+        <!-- 多说最新评论 end -->
+        <br>
     </section>
 </aside>
 
@@ -331,33 +375,41 @@ $('.popover-weixin').popover({
     content: '<center><img style="width:100px;height:100px;" src="http://www.footballzone.cn/static/img/lyx_wx.jpg" /></center>'
 });
 
-</script>                </div>
-            </div>
+</script>            </div>
         </div>
-        <div class="container hidden-lg hidden-md hidden-sm">
-            <div class="row">
-                <div class="col-xs-12">
-                    <article>
-                        <header>
-                            <h1 style="font-size:18px;font-weight:bold;">使用 Pelican + Github 搭建静态博客</h1>
-                        </header>
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="pull-left" style="font-size:12px;">
-                                    <a class="" style="margin-right:15px;" href="/authors/michael.html" target="_blank">
-                                        <i class="fa fa-user text-muted"></i>
-                                        <span class="text-muted">Michael</span>
-                                    </a>
+    </div>
+    <div class="container hidden-lg hidden-md hidden-sm">
+        <div class="row">
+            <div class="col-xs-12">
+                <article>
+                    <header>
+                        <h1 style="font-size:18px;font-weight:bold;">使用 Pelican + Github 搭建静态博客</h1>
+                    </header>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="pull-left" style="font-size:12px;">
+                                <a class="" style="margin-right:15px;" href="/authors/michael.html" target="_blank">
+                                    <i class="fa fa-user text-muted"></i>
+                                    <span class="text-muted">Michael</span>
+                                </a>
 
-                                    <span class="published">
-                                        <i class="fa fa-clock-o text-muted"></i>
-                                        <time class="text-muted" datetime="2013-11-06T10:30:00+08:00">2013-11-06</time>
-                                    </span>
-                                </div>
+                                <span class="published">
+                                    <i class="fa fa-clock-o text-muted"></i>
+                                    <time class="text-muted" datetime="2013-11-06T10:30:00+08:00">2013-11-06</time>
+                                </span>
+                            </div>
+                            <div class="pull-right" style="font-size:12px;">
+                                <a href="#mobile_comment_list" onclick="$('#mobile_duoshuo_comments_tab').tab('show');">
+                                    <i class="fa fa-comments-o text-muted"></i>
+                                    <span class="ds-thread-count text-muted"
+                                        data-thread-key="1" 
+                                        data-count-type="comments"></span>
+                                </a>
                             </div>
                         </div>
-                        <hr>
-                        <div class="" style="font-size:14px;"><h3>介绍 Pelican</h3>
+                    </div>
+                    <hr>
+                    <div class="" style="font-size:14px;"><h3>介绍 Pelican</h3>
 <p>Pelican<code>[ˈpɛlɪkən]</code> 是法语 Calepin<code>[kalp ɛ̃]</code>变形词（<code>anagram</code>），Calepin 是笔记本、备忘录的意思。</p>
 <p>框架选型上，我有以下考虑，经历各种 Google + Baidu 后，最终确定了 Pelican + Github 的方案。</p>
 <ul>
@@ -443,66 +495,76 @@ git clone git://github.com/getpelican/pelican-plugins.git   # 插件
 
 
 <p><br></p></div>
-                        <ul class="nav nav-tabs" style="margin-bottom:15px;padding:20px 20px 0px 20px;background-color:#f7f8f9;">
-                            <li class="active" style="width:33.33333333%;" align="center">
-                                <a href="#tag_list" data-toggle="tab">
-                                    <i class="fa fa-tags"></i>
-                                    <span>标签</span>
-                                </a>
-                            </li>
-                            <li style="width:33.33333333%;" align="center">
-                                <a href="#relative_posts" data-toggle="tab">
-                                    <i class="fa fa-copy"></i>
-                                    <span>相关</span>
-                                </a>
-                            </li>
-                            <li style="width:33.33333333%;" align="center">
-                                <a href="#comment_list" data-toggle="tab">
-                                    <i class="fa fa-comments"></i>
-                                    <span>评论</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="tab-content" style="margin-bottom:30px;">
-                            <div id="tag_list" class="tab-pane active">
-                                <ul class="nav nav-pills">
-                                    <li>
-                                        <a href="/tags/python.html">
-                                            <span class="text-muted">Python</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/tags/pelican.html">
-                                            <span class="text-muted">Pelican</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/tags/github.html">
-                                            <span class="text-muted">Github</span>
-                                        </a>
-                                    </li>
-                                </ul>
+                    <ul class="nav nav-tabs" style="margin-bottom:15px;padding:20px 20px 0px 20px;background-color:#f7f8f9;">
+                        <li class="active" style="width:33.33333333%;" align="center">
+                            <a href="#tag_list" data-toggle="tab">
+                                <i class="fa fa-tags"></i>
+                                <span>标签</span>
+                            </a>
+                        </li>
+                        <li style="width:33.33333333%;" align="center">
+                            <a id="mobile_duoshuo_comments_tab" href="#mobile_comment_list" data-toggle="tab">
+                                <i class="fa fa-comments-o"></i>
+                                <span>评论</span>
+                                <span>(</span>
+                                <span class="ds-thread-count text-muted"
+                                    data-thread-key="1" 
+                                    data-count-type="comments"></span>
+                                <span>)</span>
+                            </a>
+                        </li>
+                        <li style="width:33.33333333%;" align="center">
+                            <a href="#relative_posts" data-toggle="tab">
+                                <i class="fa fa-copy"></i>
+                                <span>推荐</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" style="margin-bottom:30px;">
+                        <div id="tag_list" class="tab-pane active">
+                            <ul class="nav nav-pills">
+                                <li>
+                                    <a href="/tags/python.html">
+                                        <span class="text-muted">Python</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/tags/pelican.html">
+                                        <span class="text-muted">Pelican</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/tags/github.html">
+                                        <span class="text-muted">Github</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="mobile_comment_list" class="tab-pane">
+                            <!-- 多说评论框 start -->
+                            <div class="ds-thread" 
+                                data-thread-key="1" 
+                                data-title="使用 Pelican + Github 搭建静态博客" 
+                                data-url="http://liangyongxiong.cn/posts/1.html">
                             </div>
-                            <div id="relative_posts" class="tab-pane">
-                                <div class="" style="padding:10px;">
-                                    <span class="text-muted">相关文章</span>
-                                </div>
-                            </div>
-                            <div id="comment_list" class="tab-pane">
-                                <!-- 多说评论框 start -->
-                                <div class="ds-thread" 
-                                    data-thread-key="liangyongxiong" 
-                                    data-title="使用 Pelican + Github 搭建静态博客" 
-                                    data-url="/posts/1.html">
-                                </div>
-                                <!-- 多说评论框 end -->
+                            <!-- 多说评论框 end -->
+                        </div>
+                        <div id="relative_posts" class="tab-pane">
+                            <div class="" style="padding:10px;font-size:16px;">
+                                <!-- 多说热评文章 start -->
+                                <div class="ds-top-threads"
+                                    data-range="monthly" 
+                                    data-num-items="5"></div>
+                                <!-- 多说热评文章 end -->
                             </div>
                         </div>
-                    </article>
-                </div>
+                    </div>
+                </article>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<br>
         </div>
 
         <div class="base-footer">
@@ -551,8 +613,7 @@ git clone git://github.com/getpelican/pelican-plugins.git   # 插件
         ds.type = 'text/javascript';ds.async = true;
         ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
         ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0] 
-        || document.getElementsByTagName('body')[0]).appendChild(ds);
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
 </script>
 <!-- 多说公共JS代码 end -->
