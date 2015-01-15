@@ -893,9 +893,7 @@
     <section>
         <blockquote style="margin:0px;padding:10px;font-size:16px;background-color:#f7f8f9;">
             <i class="fa fa-asterisk text-muted"></i>
-            <a href="#">
-                <strong class="icon-label">联系方式</strong>
-            </a>
+            <strong class="icon-label">联系方式</strong>
         </blockquote>
         <div class="container-fluid" style="margin-top:5px;">
             <div class="row" style="line-height:40px;font-size:16px;">
@@ -915,7 +913,7 @@
                     </a>
                 </div>
                 <div class="col-xs-2" align="center">
-                    <a class="popover-weixin lyx-a" href="javascript:void(0);" data-toggle="popover">
+                    <a class="popover-sidebar-weixin lyx-a" href="javascript:void(0);" data-toggle="popover">
                         <i class="fa fa-weixin text-muted"></i>
                     </a>
                 </div>
@@ -940,13 +938,13 @@
                 </a>
             </li>
             <li>
-                <a href="/tags/github.html">
-                    <span class="text-muted">Github</span>
+                <a href="/tags/pelican.html">
+                    <span class="text-muted">Pelican</span>
                 </a>
             </li>
             <li>
-                <a href="/tags/pelican.html">
-                    <span class="text-muted">Pelican</span>
+                <a href="/tags/github.html">
+                    <span class="text-muted">Github</span>
                 </a>
             </li>
         </ul>
@@ -998,7 +996,7 @@
 
 <script type="text/javascript">
 
-$('.popover-weixin').popover({
+$('.popover-sidebar-weixin').popover({
     html: true,
     trigger: 'hover',
     placement: 'left',
@@ -1466,19 +1464,19 @@ $('.popover-weixin').popover({
         </div>
 
         <div class="base-footer">
-<footer style="background-color:#333;">
+<footer>
     <hr style="margin:0px;">
-    <div class="container">
-        <div class="" style="padding:15px 0px;">
-            <div class="row">
-                <div class="col-sm-10 col-xs-12">
-                    <span class="text-muted">&copy; 2015</span>
-                    <a class="text-muted" style="margin:0px 10px;" href="mailto:331338391@qq.com">
-                        <span style="color:white;">LYX</span>
-                    </a>
-                    <span class="text-muted">All rights reserved</span>
-                    <span class="text-muted hidden-xs" style="margin:0px 10px;">|</span>
-                    <span class="hidden-xs">
+    <div class="hidden-xs" style="background-color:#333;">
+        <div class="container">
+            <div class="" style="padding:15px 0px;">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <span class="text-muted">&copy; 2015</span>
+                        <a class="text-muted" style="margin:0px 10px;" href="mailto:331338391@qq.com">
+                            <span style="color:white;">LYX</span>
+                        </a>
+                        <span class="text-muted">All rights reserved</span>
+                        <span class="text-muted" style="margin:0px 10px;">|</span>
                         <span class="text-muted">Powered by</span>
                         <a class="text-muted" href="http://docs.getpelican.com/" target="_blank">
                             <span style="color:white;">Pelican</span>
@@ -1487,20 +1485,78 @@ $('.popover-weixin').popover({
                         <a class="text-muted" href="http://getbootstrap.com" target="_blank">
                             <span style="color:white;">Bootstrap</span>
                         </a>
-                    </span>
-                </div>
-                <div class="col-sm-2 hidden-xs">
-                    <p class="text-right">
-                        <a href="#">
-                            <i class="fa fa-arrow-up" style="color:white;"></i>
-                            <b class="hidden-xs" style="color:white;">返回顶部</b>
-                        </a>
-                    </p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p class="text-right">
+                            <a href="#">
+                                <i class="fa fa-arrow-up" style="color:white;"></i>
+                                <b style="color:white;">返回顶部</b>
+                            </a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</footer>        </div>
+    <div class="hidden-lg hidden-md hidden-sm">
+        <div class="container">
+            <div class="" style="padding:15px 0px;">
+                <div class="row" style="font-size:16px;">
+                    <div class="col-xs-2">
+                        <a href="tel:18998901440">
+                            <i class="fa fa-phone-square text-muted"></i>
+                        </a>
+                    </div>
+                    <div class="col-xs-2">
+                        <a href="mailto:331338391@qq.com" target="_blank">
+                            <i class="fa fa-envelope text-muted"></i>
+                        </a>
+                    </div>
+                    <div class="col-xs-2">
+                        <a href="http://wpa.qq.com/msgrd?v=3&uin=331338391&site=liangyongxiong.cn&menu=yes" target="_blank">
+                            <i class="fa fa-qq text-muted"></i>
+                        </a>
+                    </div>
+                    <div class="col-xs-2">
+                        <a class="popover-footer-weixin lyx-a" href="javascript:void(0);" data-toggle="popover">
+                            <i class="fa fa-weixin text-muted"></i>
+                        </a>
+                    </div>
+                    <div class="col-xs-2">
+                        <a href="http://m.weibo.cn/u/2104619472" target="_blank">
+                            <i class="fa fa-weibo text-muted"></i>
+                        </a>
+                    </div>
+                    <div class="col-xs-2" align="right">
+                        <a href="#">
+                            <i class="fa fa-arrow-circle-up"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:10px;">
+                    <div class="col-xs-12">
+                        <span class="text-muted">&copy; 2015</span>
+                        <b class="text-muted" style="margin:0px 7px;">LYX</b>
+                        <span class="text-muted">All rights reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script type="text/javascript">
+
+$('.popover-footer-weixin').popover({
+    html: true,
+    trigger: 'hover',
+    placement: 'top',
+    title: '微信 扫一扫',
+    content: '<center><img style="width:100px;height:100px;" src="http://www.footballzone.cn/static/img/lyx_wx.jpg" /></center>'
+});
+
+</script>        </div>
 
 
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
